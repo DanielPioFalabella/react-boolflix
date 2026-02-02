@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import axios from "axios"
-import {SearchContext} from "../context/SearchContext"
+import { SearchContext } from "../context/SearchContext"
 
 const Header = () => {
     // definisco una variabile di stato per salvare quello che l'utente cerca
