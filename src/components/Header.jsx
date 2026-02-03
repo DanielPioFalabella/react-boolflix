@@ -10,7 +10,7 @@ const Header = () => {
 
     // definisco una funzione che mi vada a recuperare i valori all'interno dell'API
     const handleSearch = () => {
-        axios.get(endpointFilm + searchFilm)
+        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=` + endpointFilm + searchFilm)
         .then(res => setResultsFilm(res.data.results))
         .catch(err => console.log(err))
     }
